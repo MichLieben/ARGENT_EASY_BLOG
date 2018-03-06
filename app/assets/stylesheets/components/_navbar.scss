@@ -1,7 +1,33 @@
 .navbar-money {
   height: 70px;
-  padding: 0px 30px;
+  // padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-money-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.navbar-money-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.navbar-money-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  height: 55px;
+  position: absolute;
+  top: 7px;
 }

@@ -1,20 +1,39 @@
-
-<div class="navbar-money amiko-16">
-
-      <%= link_to 'Home', root_path %>
-      <% if admin_signed_in? %>
-      <!--This block is only visible to signed in admins -->
-        <%= link_to 'New Post', new_post_path %>
-        <%= link_to 'My Account', edit_admin_registration_path  %>
-        <%= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
-      <!-- The block ends here -->
-      <% else %>
-        <%= link_to 'Login', new_admin_session_path  %>
+<div class="container-money">
+  <div class="navbar-money amiko-16">
+    <div class="navbar-money-left">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "MLOGOC.png" %>
       <% end %>
+    </div>
+    <div class="navbar-money-middle">
+      <span>Parier</span>
+      <span>Investir</span>
+      <span>Bons Plans</span>
+      <span>Économiser</span>
+      <span>Contact</span>
+    </div>
+    <div class="navbar-money-right">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
 </div>
 
 
 
 
 
-<!-- <div class="container-fluid"></div> -->
+
+
+
+<%#= link_to 'Home', root_path %>
+  <%# if admin_signed_in? %>
+  <!--This block is only visible to signed in admins -->
+    <%#= link_to 'New Post', new_post_path %>
+    <%#= link_to 'My Account', edit_admin_registration_path  %>
+    <%#= link_to 'Logout', destroy_admin_session_path, :method => :delete %>
+  <!-- The block ends here -->
+  <%# else %>
+    <%#= link_to 'Login', new_admin_session_path  %>
+  <%# end %>
+
+
