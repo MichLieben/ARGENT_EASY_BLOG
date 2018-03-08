@@ -9,9 +9,21 @@
 }
 
 .container-post-side {
-  width: 45%;
+  width: 47.62%;
 }
 
 .body-post {
-  height: 150px;
+  height: 525px;
+}
+
+.add-turquoise {
+  color: $turquoise;
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.body-post img {
+  height: 375px !important;
+  width: 600px !important;
 }

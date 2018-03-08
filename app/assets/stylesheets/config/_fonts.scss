@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Amiko:700');
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
+$body-font: "Helvetica", "sans-serif";
 $headers-font: "Amiko", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
@@ -16,9 +16,21 @@ $headers-font: "Amiko", "sans-serif";
 // }
 // $my-font: "Font Name";
 
-.amiko-16 {
+.amiko-13 {
   font-family: "Amiko", "sans-serif";
-  font-size: 16px;
+  font-size: 13px;
   // color: black;
   // text-decoration: none;
+}
+
+.size23px {
+  font-size: 23px;
+}
+
+.size18px {
+  font-size: 18px;
+}
+
+.date-money {
+  color: #676767;
 }
