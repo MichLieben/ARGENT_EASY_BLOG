@@ -18,6 +18,14 @@
     <%= f.input :title, class: "form-control" %>
   </div>
 
+  <!-- <div class="form-group">
+    <%#= f.input :title, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%#= f.input :title, class: "form-control" %>
+  </div> -->
+
   <div class="form-group">
     <%= f.input :body, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
   </div>
@@ -26,3 +34,5 @@
     <%= f.button :submit %>
   </div>
 <% end %>
+
+<%#= Rajouter champ pour image post dans index (soit ça recadre l'index et set la dimension pour la partie 'post', soit rajouter 2 champs)  %>
