@@ -3,6 +3,9 @@
   <div class="container-post">
   <% @posts.each do |post| %>
     <div class="container-post-side">
+      <div class="index-image">
+        <%= image_tag(post.image) %>
+      </div>
       <h3 class="size18px"><%= post.title %></h3>
       <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %></p>
       <div class="body-post">
