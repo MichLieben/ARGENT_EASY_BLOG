@@ -1,12 +1,12 @@
 <div class="container-money">
-  <h2 class="size23px">ARTICLES RÉCENTS</h2>
+  <h2 class="size23px padding15-45 margin-bottom30">ARTICLES RÉCENTS</h2>
   <div class="container-post">
   <% @posts.each do |post| %>
     <div class="container-post-side col-xs-12 col-sm-6">
       <div class="index-image">
-        <%= image_tag(post.image) %>
+        <%= link_to image_tag(post.image), post_path(post) %>
       </div>
-      <h3 class="size18px"><%= post.title %></h3>
+      <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
       <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %></p>
       <div class="body-post">
         <%= raw(post.body).truncate(358) %>
@@ -14,11 +14,11 @@
       <%= link_to "READ MORE", post_path(post), class: "add-turquoise" %>
       <br>
     <% if admin_signed_in? %>
-      <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
-      <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
-      <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <%= link_to "Show", post_path(post), class: "white-font" %>
+      <%= link_to "Edit", edit_post_path(post), class: "white-font" %>
+      <%= link_to "Delete", post_path(post), class: "white-font", data: {:confirm => "Are you sure?"}, method: :delete %>
     <% end %>
-    <hr />
+
     </div>
   <% end %>
   </div>

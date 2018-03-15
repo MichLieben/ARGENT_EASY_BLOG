@@ -1,5 +1,6 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
 
 
 .container-post {
@@ -10,12 +11,14 @@
 }
 
 .container-post-side {
+  margin-bottom: 30px;
   // width: 47.62%;
-  width: 50%;
+  // width: 50%;
 }
 
 .body-post {
-  height: 100px;
+  height: 75px;
+  width: 600px;
 }
 
 .add-turquoise {
@@ -33,4 +36,26 @@
 .index-image img {
   height: 375px !important;
   width: 600px !important;
+}
+
+.padding15-45 {
+  padding-left: 15px;
+  padding-right: 45px;
+}
+
+.white-font {
+  color: white;
+}
+
+.no-decoration {
+  color: black;
+  text-decoration: none;
+  &:hover, &:focus, &:active {
+    color: black !important;
+    text-decoration: none;
+  }
+}
+
+.margin-bottom30 {
+  margin-bottom: 30px;
 }
