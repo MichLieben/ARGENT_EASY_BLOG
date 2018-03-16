@@ -1,8 +1,15 @@
-<div class="col-sm-11 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-  <div class="show-image">
+<!-- <div class="col-sm-11 col-xs-12 blog-content"> -->
+<div class="container-money padding15-45">
+  <div class="titre-date">
+    <h2 class="size23px margin-bottom30"><%= @post.title.upcase %></h2>
+    <p class="date-money"><%= @post.created_at.strftime('%b %d, %Y') %></p>
+  </div>
+  <div class="show-image margin-bottom15">
     <%= image_tag(@post.image) %>
+  </div>
+
+  <div class="show-image show-font">
     <%= raw @post.body %>
   </div>
 </div>
+<!-- </div> -->
