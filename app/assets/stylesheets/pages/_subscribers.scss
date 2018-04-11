@@ -2,18 +2,44 @@
 .newsletter-form {
   padding: 50px 10px;
   background-color: #F4F4F4;
+  width: 500px;
 }
 
 .newsletter-submit {
   height: 50px;
   width: 120px;
   border: none;
-  background-color: $turquoise;
   color: white;
   font-weight: bold;
+  background-color: #383737;
+  &:hover {
+  background-color: $turquoise;
+  }
 }
 
 .newsletter-name {
   border: 1px solid rgba(0,0,0,.12);
   height: 50px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.newsletter-mail {
+  border: 1px solid rgba(0,0,0,.12);
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+input[placeholder] {
+  padding-left: 15px;
+}
+
+
+.newsletter-field {
+  margin: 5px 10px;
 }

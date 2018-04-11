@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:edit, :update, :show, :destroy]
-  before_action :authenticate_admin!, except: [:index, :show]
+  before_action :authenticate_admin!, except: [ :index, :show]
 
   # Index action to render all posts
   def index
@@ -42,6 +42,7 @@ class PostsController < ApplicationController
 
   # The show action renders the individual post after retrieving the the id
   def show
+    @subscriber = Subscriber.new
   end
 
   # The destroy action removes the post permanently from the database

@@ -1,15 +1,27 @@
-<!-- <div class="col-sm-11 col-xs-12 blog-content"> -->
-<div class="container-money padding15-45">
-  <div class="titre-date">
-    <h2 class="size23px margin-bottom30"><%= @post.title.upcase %></h2>
-    <p class="date-money"><%= @post.created_at.strftime('%b %d, %Y') %></p>
-  </div>
-  <div class="show-image margin-bottom15">
-    <%= image_tag(@post.image) %>
-  </div>
+<div class="container-fluid">
+  <div class="container-money padding15-45">
+    <div class="titre-date">
+      <h2 class="size23px margin-bottom30"><%= @post.title.upcase %></h2>
+      <p class="date-money"><%= @post.created_at.strftime('%b %d, %Y') %></p>
+    </div>
+    <div class="show-image margin-bottom15">
+      <%= image_tag(@post.image) %>
+    </div>
 
-  <div class="show-image show-font">
-    <%= raw @post.body %>
+    <div class="show-image show-font">
+      <%= raw @post.body %>
+    </div>
   </div>
 </div>
-<!-- </div> -->
+
+<div class="container-money">
+  <div class="padding25-45">
+    <%= render "subscribers/index" %>
+    <div class="gray-line"></div>
+    <div class="donate-crypto">
+      <p>Donate <span class="add-turquoise bold-style">BTC</span>: 3HqVn5TmMBUXgPdV8zbe1hcctuVMSXGqjH</p>
+      <p>Donate <span class="add-turquoise bold-style">ETH</span>: 0x667eaD1Cb228E86bD41Ec27B208C9869faCFe889</p>
+      <p>Donate <span class="add-turquoise bold-style">LTC</span>: LVa4VA7TdYjhgcCghDpvQM4FSF6iiV7vHo</p>
+    </div>
+  </div>
+</div>

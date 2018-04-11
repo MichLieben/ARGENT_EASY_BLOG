@@ -1,25 +1,40 @@
-<div class="container-money">
-  <h2 class="size23px padding15-45 margin-bottom30">ARTICLES RÉCENTS</h2>
-  <div class="container-post">
-  <% @posts.each do |post| %>
-    <div class="container-post-side col-xs-12 col-sm-6">
-      <div class="index-image">
-        <%= link_to image_tag(post.image), post_path(post) %>
-      </div>
-      <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
-      <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %></p>
-      <div class="body-post">
-        <%= raw(post.body).truncate(358) %>
-      </div>
-      <%= link_to "READ MORE", post_path(post), class: "add-turquoise" %>
-      <br>
-    <% if admin_signed_in? %>
-      <%= link_to "Show", post_path(post), class: "white-font" %>
-      <%= link_to "Edit", edit_post_path(post), class: "white-font" %>
-      <%= link_to "Delete", post_path(post), class: "white-font", data: {:confirm => "Are you sure?"}, method: :delete %>
-    <% end %>
+<div class="container-fluid">
+  <div class="container-money">
+    <h2 class="size23px padding15-45 margin-bottom30">ARTICLES RÉCENTS</h2>
+    <div class="container-post">
+    <% @posts.each do |post| %>
+      <div class="container-post-side col-xs-12 col-sm-6">
+        <div class="index-image">
+          <%= link_to image_tag(post.image), post_path(post) %>
+        </div>
+        <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
+        <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %></p>
+        <div class="body-post">
+          <%= raw(post.body).truncate(358) %>
+        </div>
+        <%= link_to "READ MORE", post_path(post), class: "add-turquoise" %>
+        <br>
+      <% if admin_signed_in? %>
+        <%= link_to "Show", post_path(post), class: "white-font" %>
+        <%= link_to "Edit", edit_post_path(post), class: "white-font" %>
+        <%= link_to "Delete", post_path(post), class: "white-font", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
 
+      </div>
+    <% end %>
     </div>
-  <% end %>
   </div>
 </div>
+
+<div class="container-money">
+  <div class="padding25-45">
+    <%= render "subscribers/index" %>
+    <div class="gray-line"></div>
+    <div class="donate-crypto">
+      <p>Donate <span class="add-turquoise bold-style">BTC</span>: 3HqVn5TmMBUXgPdV8zbe1hcctuVMSXGqjH</p>
+      <p>Donate <span class="add-turquoise bold-style">ETH</span>: 0x667eaD1Cb228E86bD41Ec27B208C9869faCFe889</p>
+      <p>Donate <span class="add-turquoise bold-style">LTC</span>: LVa4VA7TdYjhgcCghDpvQM4FSF6iiV7vHo</p>
+    </div>
+  </div>
+</div>
+
