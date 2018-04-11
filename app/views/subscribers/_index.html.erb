@@ -1,0 +1,18 @@
+<center>
+  <div class="newsletter-form">
+    <h3>SOYEZ TENU AU COURANT !</h3>
+    <h6>Inscrivez vous à la newsletter pour ne rien manquer.</h6>
+    <%= form_for @subscriber do |f| %>
+      <div>
+        <%= f.text_field :firstname, placeholder: "Prénom", class: "newsletter-name" %>
+        <%= f.text_field :name, placeholder: "Nom", class: "newsletter-name" %>
+      </div>
+      <div>
+        <%= f.text_field :email, placeholder: "Adresse Mail" %>
+      </div>
+      <div>
+        <%= f.submit "SIGN UP", class: "newsletter-submit" %>
+      </div>
+    <% end %>
+  </div>
+</center>
