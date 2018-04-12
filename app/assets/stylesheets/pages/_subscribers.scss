@@ -2,7 +2,7 @@
 .newsletter-form {
   padding: 50px 10px;
   background-color: #F4F4F4;
-  width: 500px;
+  width: 600px;
 }
 
 .newsletter-submit {
@@ -11,9 +11,9 @@
   border: none;
   color: white;
   font-weight: bold;
-  background-color: #383737;
-  &:hover {
   background-color: $turquoise;
+  &:hover {
+  opacity: 0.8;
   }
 }
 

@@ -10,14 +10,14 @@
   margin-bottom: 30px;
   height: 1.2px;
   background-color: #676767;
-  opacity: 0.4;
+  opacity: 0.2;
   // background: linear-gradient(to right, white, gray, white);
   // color: black;
   // background-color: gray;
 }
 
 .donate-crypto {
-  text-align: left;
+  text-align: right;
   margin-bottom: 20px;
 }
 
@@ -87,8 +87,16 @@
   }
 }
 
+.margin-bottom20 {
+  margin-bottom: 20px;
+}
+
 .margin-bottom30 {
   margin-bottom: 30px;
+}
+
+.margin-top50 {
+  margin-top: 50px;
 }
 
 .turquoise-line {
