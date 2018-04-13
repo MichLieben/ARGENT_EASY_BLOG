@@ -8,4 +8,6 @@ class Post < ApplicationRecord
 
   validates :body, presence: true
   validates :image, presence: true
+
+  CATEGORIES = ['Parier', 'Investir', 'Bons Plans', 'Economiser']
 end

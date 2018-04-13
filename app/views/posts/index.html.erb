@@ -8,11 +8,11 @@
           <%= link_to image_tag(post.image), post_path(post) %>
         </div>
         <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
-        <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %> | <%= post.category %></p>
+        <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %> | <i><%= post.category %></i></p>
         <div class="body-post">
-          <%= raw(post.body).truncate(358) %>
+          <%= raw post.body.truncate(358, separator: /\n/, omission: '') %>
         </div>
-        <%= link_to "READ MORE", post_path(post), class: "add-turquoise" %>
+        <%= link_to "LIRE PLUS", post_path(post), class: "add-turquoise" %>
         <br>
       <% if admin_signed_in? %>
         <%= link_to "Show", post_path(post), class: "white-font" %>
@@ -26,8 +26,8 @@
   </div>
 </div>
 
-<div class="container-money margin-top50">
-  <div class="padding25-45">
+<div class="container-money">
+  <div class="padding25-45 margin-top100">
     <%= render "subscribers/index" %>
     <div class="gray-line"></div>
     <div class="donate-crypto">

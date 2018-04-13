@@ -8,10 +8,14 @@
       <% end %>
     </div>
     <div class="navbar-money-middle">
-      <a href=""><span>Parier</span></a>
+      <% Post::CATEGORIES.each do |category_name| %>
+        <%= link_to category_name, posts_path(category: category_name) %>
+      <% end %>
+      <!-- <a href=""><span>Parier</span></a>
+      <%#= link_to post.category, root_path(category: category) %>
       <a href=""><span>Investir</span></a>
       <a href=""><span>Bons Plans</span></a>
-      <a href=""><span>Économiser</span></a>
+      <a href=""><span>Économiser</span></a> -->
       <a href=""><span>Contact</span></a>
     </div>
     <div class="navbar-money-right">

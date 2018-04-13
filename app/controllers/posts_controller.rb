@@ -4,9 +4,18 @@ class PostsController < ApplicationController
 
   # Index action to render all posts
   def index
-    @posts = Post.all.reverse_order
+    if params[:category]
+      @posts = Post.all.where(category: params[:category])
+    else
+      @posts = Post.all.reverse_order
+    end
+    # @posts = Post.all.reverse_order
     @subscriber = Subscriber.new
   end
+
+  # def parier
+  #   @posts = Post.all.where
+  # end
 
   # New action for creating post
   def new
@@ -58,7 +67,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :image)
+    params.require(:post).permit(:title, :body, :image, :category)
   end
 
   def find_post
