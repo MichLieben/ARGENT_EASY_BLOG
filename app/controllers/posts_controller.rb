@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # Index action to render all posts
   def index
     if params[:category]
-      @posts = Post.all.where(category: params[:category])
+      @posts = Post.all.where(category: params[:category]).reverse_order
     else
       @posts = Post.all.reverse_order
     end

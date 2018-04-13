@@ -87,6 +87,15 @@
   }
 }
 
+.no-decoration-color-grey {
+  text-decoration: none;
+  color: #676767;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    color: #676767 !important;
+  }
+}
+
 .margin-bottom20 {
   margin-bottom: 20px;
 }
