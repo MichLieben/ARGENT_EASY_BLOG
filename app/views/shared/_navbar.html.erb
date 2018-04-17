@@ -31,7 +31,7 @@
 
 
 
-<%= link_to 'Home', root_path, class: "white-font" %>
+<%#= link_to 'Home', root_path, class: "white-font" %>
   <% if admin_signed_in? %>
   <!--This block is only visible to signed in admins -->
     <%= link_to 'New Post', new_post_path, class: "white-font" %>
@@ -39,7 +39,7 @@
     <%= link_to 'Logout', destroy_admin_session_path, class: "white-font", :method => :delete %>
   <!-- The block ends here -->
   <% else %>
-    <%= link_to 'Login', new_admin_session_path, class: "white-font" %>
+    <%#= link_to 'Login', new_admin_session_path, class: "white-font" %>
   <% end %>
 
 
