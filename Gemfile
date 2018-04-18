@@ -9,7 +9,7 @@ gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
 gem 'ckeditor'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave'
 gem 'mini_magick'
 gem 'cloudinary'
 

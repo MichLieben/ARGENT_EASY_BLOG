@@ -220,7 +220,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
-  carrierwave (~> 1.2)
+  carrierwave
   ckeditor
   cloudinary
   devise
