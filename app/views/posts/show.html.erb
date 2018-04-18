@@ -5,7 +5,7 @@
       <p class="date-money"><%= @post.created_at.strftime('%b %d, %Y') %></p>
     </div>
     <div class="show-image margin-bottom15">
-      <%= image_tag(@post.image) %>
+      <%= cl_image_path @post.image %>
     </div>
 
     <div class="show-image show-font">
