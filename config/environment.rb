@@ -3,5 +3,5 @@ require_relative 'application'
 
 # Initialize the Rails application.
 Rails.application.initialize!
-# require 'carrierwave'
-# require 'carrierwave/orm/activerecord'
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
