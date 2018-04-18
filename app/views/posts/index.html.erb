@@ -5,7 +5,7 @@
     <% @posts.each do |post| %>
       <div class="container-post-side col-xs-12 col-sm-6">
         <div class="index-image">
-          <%= link_to image_tag(post.image), post_path(post) %>
+          <%= link_to cl_image_tag(post.image), post_path(post) %>
         </div>
         <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
         <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %> | <i><%= link_to post.category, posts_path(category: post.category), class: "no-decoration-color-grey" %></i></p>
