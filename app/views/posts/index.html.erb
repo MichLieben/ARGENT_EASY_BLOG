@@ -10,7 +10,7 @@
         <h3 class="size18px"><%= link_to post.title, post_path(post), class: "no-decoration" %></h3>
         <p class="date-money"><%= post.created_at.strftime('%b %d, %Y') %> | <i><%= link_to post.category, posts_path(category: post.category), class: "no-decoration-color-grey" %></i></p>
         <div class="body-post">
-          <%= raw post.body.truncate(375, separator: /\n/, omission: '') %>
+          <%= raw post.body.truncate(381, separator: /\n/, omission: '') %>
         </div>
         <%= link_to "LIRE PLUS", post_path(post), class: "add-turquoise" %>
         <br>
