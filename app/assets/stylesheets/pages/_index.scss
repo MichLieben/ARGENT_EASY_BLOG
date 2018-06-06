@@ -39,10 +39,6 @@
   // width: 50%;
 }
 
-.body-post {
-  height: 75px;
-  width: 540px;
-}
 
 .add-turquoise {
   color: $turquoise;
@@ -60,10 +56,6 @@
 //   width: 600px !important;
 // }
 
-.index-image img {
-  height: 335px !important;
-  width: 540px !important;
-}
 
 .padding15-45 {
   padding-left: 15px;
@@ -114,4 +106,74 @@
   width: 100%;
   background-color: $turquoise;
   padding: 0px 15px;
+}
+
+@media only screen
+and (max-width: 989px) {
+  .body-post {
+    height: 80px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 70%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-image img {
+    height: auto !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 70% !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-title {
+    max-width: 70%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+}
+
+@media only screen
+and (min-width: 990px)
+and (max-width: 1094px) {
+  .body-post {
+    height: 80px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 432px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-image img {
+    height: 268px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 432px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-title {
+    max-width: 432px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+}
+
+@media only screen
+and (min-width: 1095px)
+and (max-width: 1179px) {
+  .body-post {
+    height: 80px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 486px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-image img {
+    height: 301.5px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 486px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-title {
+    max-width: 486px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+}
+
+@media only screen
+and (min-width: 1180px) {
+  .body-post {
+    height: 80px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 540px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-image img {
+    height: 335px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 540px !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .index-title {
+    max-width: 540px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
 }

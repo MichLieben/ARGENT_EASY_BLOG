@@ -28,12 +28,285 @@ a {
   }
 }
 
-.container-money {
-  margin: 0 125px;
+
+// RESPONSIVE
+@media only screen
+and (min-width: 1540px) {
+  .container-money {
+    margin: 0 175px;
+  }
+
+
+  .container-money-show {
+    margin: 0 175px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1520px)
+and (max-width: 1539px) {
+  .container-money {
+    margin: 0 165px;
+  }
+
+
+  .container-money-show {
+    margin: 0 165px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1500px)
+and (max-width: 1519px) {
+  .container-money {
+    margin: 0 155px;
+  }
+
+
+  .container-money-show {
+    margin: 0 155px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1480px)
+and (max-width: 1499px) {
+  .container-money {
+    margin: 0 145px;
+  }
+
+
+  .container-money-show {
+    margin: 0 145px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1460px)
+and (max-width: 1479px) {
+  .container-money {
+    margin: 0 135px;
+  }
+
+
+  .container-money-show {
+    margin: 0 135px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1440px)
+and (max-width: 1459px) {
+  .container-money {
+    margin: 0 125px;
+  }
+
+
+  .container-money-show {
+    margin: 0 125px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1420px)
+and (max-width: 1439px) {
+  .container-money {
+    margin: 0 115px;
+  }
+
+
+  .container-money-show {
+    margin: 0 115px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1400px)
+and (max-width: 1419px) {
+  .container-money {
+    margin: 0 105px;
+  }
+
+
+  .container-money-show {
+    margin: 0 105px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1380px)
+and (max-width: 1399px) {
+  .container-money {
+    margin: 0 95px;
+  }
+
+
+  .container-money-show {
+    margin: 0 95px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1360px)
+and (max-width: 1389px) {
+  .container-money {
+    margin: 0 85px;
+  }
+
+
+  .container-money-show {
+    margin: 0 85px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1340px)
+and (max-width: 1359px) {
+  .container-money {
+    margin: 0 75px;
+  }
+
+
+  .container-money-show {
+    margin: 0 75px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1320px)
+and (max-width: 1339px) {
+  .container-money {
+    margin: 0 65px;
+  }
+
+
+  .container-money-show {
+    margin: 0 65px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1300px)
+and (max-width: 1319px) {
+  .container-money {
+    margin: 0 55px;
+  }
+
+
+  .container-money-show {
+    margin: 0 55px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1280px)
+and (max-width: 1299px) {
+  .container-money {
+    margin: 0 45px;
+  }
+
+
+  .container-money-show {
+    margin: 0 45px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1260px)
+and (max-width: 1279px) {
+  .container-money {
+    margin: 0 35px;
+  }
+
+
+  .container-money-show {
+    margin: 0 35px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1240px)
+and (max-width: 1259px) {
+  .container-money {
+    margin: 0 25px;
+  }
+
+
+  .container-money-show {
+    margin: 0 25px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1220px)
+and (max-width: 1239px) {
+  .container-money {
+    margin: 0 15px;
+  }
+
+
+  .container-money-show {
+    margin: 0 15px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+and (min-width: 1180px)
+and (max-width: 1219px) {
+  .container-money {
+    margin: 0 5px;
+  }
+
+
+  .container-money-show {
+    margin: 0 5px;
+    margin-right: 250px;
+  }
+}
+
+@media only screen
+// and (min-width: 1180px)
+and (max-width: 1179px) {
+  .container-money {
+    margin: 0 5px;
+  }
+
+
+  .container-money-show {
+    margin: 0 5px;
+    margin-right: 250px;
+  }
 }
 
 
-.container-money-show {
-  margin: 0 125px;
-  margin-right: 250px;
+@media only screen
+and (max-width: 989px) {
+  .container-money {
+    max-width: 750px;
+    margin: auto;
+  }
+
+
+  .container-money-show {
+    max-width: 600px;
+    margin: auto;
+  }
 }
+
