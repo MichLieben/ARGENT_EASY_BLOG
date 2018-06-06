@@ -43,3 +43,26 @@ input[placeholder] {
 .newsletter-field {
   margin: 5px 10px;
 }
+
+@media only screen
+and (max-width: 650px) {
+  .newsletter-submit {
+    height: auto;
+    width: auto;
+  }
+
+  .newsletter-form {
+    padding: auto;
+    width: auto;
+  }
+
+  .newsletter-name {
+    height: auto;
+  }
+
+  .newsletter-mail {
+    height: auto;
+    width: auto;
+  }
+}
+

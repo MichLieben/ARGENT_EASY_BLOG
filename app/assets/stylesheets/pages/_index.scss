@@ -111,17 +111,24 @@
 @media only screen
 and (max-width: 989px) {
   .body-post {
-    height: 80px; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
-    width: 70%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    height: auto; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 100%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
   }
 
   .index-image img {
     height: auto !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
-    width: 70% !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    width: 100% !important; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
   }
 
   .index-title {
-    max-width: 70%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+    max-width: 100%; // mettre 80% de ça (par exemple et baisser) jusqu'à 990px
+  }
+
+  .container-post-side {
+  height: auto;
+  margin-bottom: 15px;
+  // width: 47.62%;
+  // width: 50%;
   }
 }
 
